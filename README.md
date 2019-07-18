@@ -30,3 +30,5 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
+
+[![Codeship Status for jenniferzoey/ProjectBrew](https://app.codeship.com/projects/cd623eb0-8bd9-0137-c6f5-22e7d08f2e58/status?branch=master)](https://app.codeship.com/projects/355210)
