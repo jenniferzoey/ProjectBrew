@@ -1,0 +1,43 @@
+@import 'colors';
+@import url('https://fonts.googleapis.com/css?family=Ubuntu&display=swap');
+
+
+body {
+  background-color: $white;
+}
+
+.top-bar {
+  background-color: $navy;
+}
+
+
+header {
+  background:
+  linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url(https://images.unsplash.com/photo-1438557068880-c5f474830377?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1353&q=80);
+  background-size: cover;
+  height: 90vh;
+}
+
+.title {
+  font-family: sans-serif;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: $white;
+  text-align: center;
+
+  h1 {
+    font-family: 'Ubuntu', sans-serif;
+    text-transform: uppercase;
+    margin: 0;
+    font-size: 3rem;
+    white-space: nowrap;
+    color: $white;
+  }
+
+}
