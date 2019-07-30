@@ -1,4 +1,5 @@
 import React, { Component } from "react"
+
 import BreweryTile from '../components/BreweryTile'
 
 class BreweriesIndexContainer extends Component {
