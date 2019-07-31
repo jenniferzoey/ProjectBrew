@@ -4,7 +4,7 @@ const BreweryTile = (props) => {
 
   return (
     <div>
-      <div className="panel">
+      <div>
         <p> {props.name} </p>
       </div>
     </div>
