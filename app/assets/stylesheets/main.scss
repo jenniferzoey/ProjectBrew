@@ -1,7 +1,6 @@
 @import 'colors';
 @import url('https://fonts.googleapis.com/css?family=Ubuntu&display=swap');
 
-
 body {
   background-color: $white;
 }
@@ -22,6 +21,7 @@ header {
   height: 90vh;
 }
 
+
 .title {
   font-family: sans-serif;
   position: absolute;
@@ -39,8 +39,26 @@ header {
     white-space: nowrap;
     color: $white;
   }
-
 }
+
+.about {
+  background-color: #C1DDDD;
+  text-align: center;
+  height: 300px;
+}
+
+.googlemap {
+  height: 1000px;
+  text-align: center;
+
+  .map {
+    height: 650px;
+    width: 900px;
+    display: inline-block;
+    margin: 0 auto;
+  }
+}
+
 .newuserformpage {
 
   h2 {
