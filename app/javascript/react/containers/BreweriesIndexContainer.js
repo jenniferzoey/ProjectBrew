@@ -37,7 +37,8 @@ class BreweriesIndexContainer extends Component {
       return(
         <BreweryTile
           key={brewery.id}
-          name={brewery.name}
+          brewery={brewery}
+
         />
       )
     })
