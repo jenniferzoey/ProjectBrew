@@ -27,7 +27,6 @@ class BreweriesIndexContainer extends Component {
     .then(body => {
       let breweryList = body
       this.setState({breweries: breweryList })
-
     })
     .catch(error => console.error(`Error in fetch: ${error.message}`))
   }
@@ -38,7 +37,6 @@ class BreweriesIndexContainer extends Component {
         <BreweryTile
           key={brewery.id}
           brewery={brewery}
-
         />
       )
     })

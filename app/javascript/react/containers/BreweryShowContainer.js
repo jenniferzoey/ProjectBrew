@@ -5,7 +5,8 @@ class BreweryShowContainer extends Component {
   constructor(props) {
     super(props)
     this.state = {
-      brewery: {}
+      brewery: {},
+      reviews: {}
     }
   }
   componentDidMount() {
@@ -28,7 +29,6 @@ class BreweryShowContainer extends Component {
   }
 
   render() {
-    
 
     return(
       <div>
@@ -36,6 +36,9 @@ class BreweryShowContainer extends Component {
           key={this.state.brewery.id}
           brewery={this.state.brewery}
         />
+
+        <h2> Reviews </h2>
+
       </div>
     )
 
