@@ -1,15 +1,19 @@
 import React, { Component } from 'react'
 import BreweryShowDetails from '../components/BreweryShowDetails'
+import ReviewTile from '../components/ReviewTile'
 
 class BreweryShowContainer extends Component {
   constructor(props) {
     super(props)
     this.state = {
-      brewery: {},
-      reviews: {}
+      brewery: {
+        reviews: []
+      }
     }
+
   }
-  componentDidMount() {
+
+  componentDidMount(){
     let brewery_id = this.props.match.params.id
     fetch(`/api/v1/breweries/${brewery_id}`)
     .then(response => {
@@ -23,21 +27,31 @@ class BreweryShowContainer extends Component {
     })
     .then(response => response.json())
     .then(breweryObject => {
-      this.setState ( {brewery: breweryObject } )
+      this.setState ( {brewery: breweryObject.brewery } )
     })
     .catch(error => console.error(error.message))
   }
 
   render() {
 
+     let allReviews = this.state.brewery.reviews.map(review => {
+      return(
+        <ReviewTile
+          key={review.id}
+          review={review}
+        />
+      )
+    })
+
     return(
       <div>
         <BreweryShowDetails
-          key={this.state.brewery.id}
           brewery={this.state.brewery}
         />
 
-        <h2> Reviews </h2>
+        <h3> Reviews: </h3>
+        {allReviews}
+
 
       </div>
     )
