@@ -13,7 +13,7 @@ class BreweriesIndexContainer extends Component {
   }
 
   componentDidMount() {
-    fetch(`/api/v1/breweries`)
+    fetch('/api/v1/breweries')
     .then(response => {
       if (response.ok) {
         return response
@@ -25,9 +25,7 @@ class BreweriesIndexContainer extends Component {
     })
     .then(response => response.json())
     .then(body => {
-      let breweryList = body
-      this.setState({breweries: breweryList })
-
+      this.setState( {breweries: body.breweries} )
     })
     .catch(error => console.error(`Error in fetch: ${error.message}`))
   }
@@ -38,7 +36,6 @@ class BreweriesIndexContainer extends Component {
         <BreweryTile
           key={brewery.id}
           brewery={brewery}
-
         />
       )
     })
