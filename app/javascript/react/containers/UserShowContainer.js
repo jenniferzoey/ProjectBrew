@@ -1,11 +1,14 @@
 import React, { Component } from 'react'
 import UserShowDetails from '../components/UserShowDetails'
+import VisitTile from '../components/VisitTile'
 
 class UserShowContainer extends Component {
   constructor(props) {
     super(props)
     this.state = {
-      user: {}
+      user: {
+        visits: []
+      }
     }
   }
 
@@ -29,12 +32,29 @@ class UserShowContainer extends Component {
   }
 
   render() {
+    let userVisits = this.state.user.visits.map(visit => {
+      return(
+        <VisitTile
+          key={visit.id}
+          visit={visit}
+        />
+      )
+    })
+
+
 
     return (
       <div>
         <UserShowDetails
           user={this.state.user}
         />
+
+        <div>
+          <h2> Visited Breweries </h2>
+          {userVisits}
+        </div>
+
+
       </div>
     )
   }

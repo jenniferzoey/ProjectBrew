@@ -8,5 +8,8 @@ class User < ApplicationRecord
   validates :last_name, presence: true
 
   has_many :reviews
+  has_many :visits
+  has_many :breweries, through: :visits
+
 
 end
