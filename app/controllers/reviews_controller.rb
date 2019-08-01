@@ -22,6 +22,33 @@ class ReviewsController < ApplicationController
       render :new
     end
   end
+
+  def edit
+    @brewery = Brewery.find(params[:brewery_id])
+    @review = Review.find(params[:id])
+  end
+
+  def update
+    @brewery = Brewery.find(params[:brewery_id])
+    @review = Review.find(params[:id])
+    @review.user = current_user
+
+    if @review.update(review_params)
+      flash[:notice] = "Edits saved successfully!"
+      redirect_to @brewery
+    else
+      flash.now[:notice] = "Failed to save edits."
+      render :edit
+    end
+  end
+
+  def destroy
+    @brewery = Brewery.find(params[:brewery_id])
+    @review = Review.find(params[:id])
+    @review.destroy
+    redirect_to @brewery
+  end
+
 end
 
   private

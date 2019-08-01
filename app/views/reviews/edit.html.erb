@@ -1,0 +1,33 @@
+<h2> Editing Review for <%= @brewery.name %> </h2>
+
+<div class="form">
+<%= form_for([@brewery, @review]) do |f| %>
+
+  <div class="field">
+    <%= f.label :title %><br />
+    <%= f.text_field :title %>
+  </div>
+
+  <div class="field">
+    <%= f.label :body %><br />
+    <%= f.text_field :body %>
+  </div>
+
+  <div class="field">
+    <%= f.label :rating, "Overall Rating (1-5)" %><br />
+    <%= f.number_field :rating %>
+  </div>
+
+  <div class="field">
+      <%= f.label :place_photo, "Place Photo" %><br />
+      <%= f.file_field :place_photo %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit "Edit Review", class:"button" %>
+  </div>
+
+<% end %>
+</div>
+
+<%= link_to 'Delete Review', [@brewery, @review], method: :delete, class:"button" %>
