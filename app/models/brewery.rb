@@ -6,5 +6,7 @@ class Brewery < ApplicationRecord
   validates :zip, presence: true
 
   has_many :reviews
+  has_many :visits
+  has_many :users, through: :visits
 
 end
