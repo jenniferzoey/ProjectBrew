@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { Link } from 'react-router-dom'
 import BreweryShowDetails from '../components/BreweryShowDetails'
 import ReviewTile from '../components/ReviewTile'
 
@@ -52,6 +53,9 @@ class BreweryShowContainer extends Component {
         <h3> Reviews: </h3>
         {allReviews}
 
+        <button className="show-page-button">
+          <a href={`/breweries/${this.state.brewery.id}/reviews/new`}> Add New Review </a>
+        </button>
 
       </div>
     )
