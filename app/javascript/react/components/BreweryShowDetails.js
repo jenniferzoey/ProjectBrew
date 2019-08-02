@@ -11,6 +11,8 @@ const BreweryShowDetails = (props) => {
         <h4> Address: </h4>
         <p>{props.brewery.address}</p>
         <p>{props.brewery.city}, {props.brewery.state}, {props.brewery.zip}</p>
+
+        <a className="add-brewery-link" href={`/breweries/${props.brewery.id}/visits`}> Add Brewery </a>
       </div>
     </div>
   )
