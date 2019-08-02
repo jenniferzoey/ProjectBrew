@@ -47,6 +47,7 @@ class UserShowContainer extends Component {
       <div>
         <UserShowDetails
           user={this.state.user}
+          url={this.state.user.profile_photo}
         />
 
         <div>

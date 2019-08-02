@@ -5,7 +5,7 @@ const UserShowDetails = (props) => {
   return (
     <div className="user-details-box">
       <div className="user-photo">
-        <img src="https://www.oberlo.com/wp-content/uploads/2018/08/Instagram-Captions.jpg"/>
+        <img src={props.url} />
       </div>
 
       <div className= "user-info">

@@ -11,5 +11,6 @@ class User < ApplicationRecord
   has_many :visits
   has_many :breweries, through: :visits
 
+  mount_uploader :profile_photo, ProfilePhotoUploader
 
 end
