@@ -30,7 +30,7 @@ gem 'jbuilder', '~> 2.5'
 gem 'bootsnap', '>= 1.1.0', require: false
 
 group :development, :test do
-
+  gem "dotenv-rails"
 end
 
 group :development do
@@ -58,3 +58,6 @@ gem 'foundation-rails', '~> 5.0'
 gem 'webpacker', '~> 3.3'
 gem 'dotenv-rails'
 gem "active_model_serializers"
+gem "carrierwave"
+gem "fog-aws"
+gem "fog"

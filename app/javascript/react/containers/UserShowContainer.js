@@ -7,6 +7,7 @@ class UserShowContainer extends Component {
     super(props)
     this.state = {
       user: {
+        profile_photo: {},
         visits: []
       }
     }
