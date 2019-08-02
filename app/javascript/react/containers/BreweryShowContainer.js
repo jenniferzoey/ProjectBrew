@@ -50,8 +50,10 @@ class BreweryShowContainer extends Component {
           brewery={this.state.brewery}
         />
 
-        <h3> Reviews: </h3>
-        {allReviews}
+        <div className="reviews-box">
+          <h3> Reviews: </h3>
+          {allReviews}
+        </div>
 
         <button className="show-page-button">
           <a href={`/breweries/${this.state.brewery.id}/reviews/new`}> Add New Review </a>
