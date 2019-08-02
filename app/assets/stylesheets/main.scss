@@ -83,6 +83,47 @@ header {
   }
 }
 
+.showheader {
+  margin-bottom: 30px;
+  height: 250px;
+  margin: 50px;
+
+  p {
+    margin-bottom: 0px;
+  }
+
+  img {
+    float: left;
+    height: 250px;
+    width: 350px;
+    padding: 15px;
+  }
+}
+
+.reviews-box {
+  margin: 50px;
+  padding: 20px;
+
+  .reviewTile {
+    background-color: #C1DDDD;
+    margin:20px;
+    padding: 10px;
+
+    .reviewTitle {
+      font-weight: bold;
+    }
+    .review-edit-link {
+      background-color: #008CBA;
+      color: white;
+      padding: 5px;
+
+
+    }
+  }
+
+
+}
+
 
 .newuserformpage {
 
