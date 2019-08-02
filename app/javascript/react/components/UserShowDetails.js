@@ -5,7 +5,7 @@ const UserShowDetails = (props) => {
   return (
     <div className="user-details-box">
       <div className="user-photo">
-        <img src={props.url} />
+        <img src={props.user.profile_photo.url} />
       </div>
 
       <div className= "user-info">

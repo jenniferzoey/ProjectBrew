@@ -7,6 +7,7 @@ class UserShowContainer extends Component {
     super(props)
     this.state = {
       user: {
+        profile_photo: {},
         visits: []
       }
     }
@@ -47,7 +48,6 @@ class UserShowContainer extends Component {
       <div>
         <UserShowDetails
           user={this.state.user}
-          url={this.state.user.profile_photo}
         />
 
         <div>
