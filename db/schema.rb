@@ -23,8 +23,8 @@ ActiveRecord::Schema.define(version: 2019_08_02_175658) do
     t.string "zip", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.float "lat"
-    t.float "long"
+    t.float "latitude"
+    t.float "longitude"
   end
 
   create_table "reviews", force: :cascade do |t|
