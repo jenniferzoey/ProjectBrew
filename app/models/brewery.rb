@@ -9,4 +9,12 @@ class Brewery < ApplicationRecord
   has_many :visits
   has_many :users, through: :visits
 
+
+  def full_address
+    "#{address}, #{city}, #{state}, #{zip}"
+  end
+
+  geocoded_by :full_address
+  after_validation :geocode
+
 end
