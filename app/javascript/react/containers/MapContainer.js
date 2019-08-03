@@ -8,7 +8,26 @@ export class MapContainer extends Component {
       showingInfoWindow: false,
       activeMarker: {},
       selectedPlace: {},
+      breweries: []
     }
+  }
+
+  componentDidMount() {
+    fetch('/api/v1/breweries/')
+    .then(response => {
+      if (response.ok) {
+        return response
+      } else {
+        let errorMessage = 'Something went wrong!'
+        let error = new Error(errorMessage)
+        throw(error)
+      }
+    })
+    .then(response => response.json())
+    .then(body => {
+      this.setState( { breweries: body.breweries } )
+    })
+    .catch(error => console.error(error.message))
   }
 
   onMarkerClick = (props, marker, e) =>
@@ -28,33 +47,40 @@ export class MapContainer extends Component {
   }
 
   render() {
-
+    let breweryMarkers = this.state.breweries.map(brewery => {
+      return(
+        <Marker
+          id={brewery.id}
+          title={brewery.name}
+          name={brewery.name}
+          position={{lat: brewery.latitude, lng: brewery.longitude}}
+          onClick={this.onMarkerClick} >
+        </Marker>
+      )
+    })
 
     return(
 
       <Map
         google={this.props.google}
         onClick={this.onMapClicked}
-        zoom={9}
+        zoom={8}
         initialCenter={{
-          lat: 42.36008,
-          lng: -71.05888,
+          lat: 42.7673,
+          lng: -71.8123,
         }}
         onClick={this.onMapClicked} >
 
-      <Marker
-        title={'New Park Brewing'}
-        name={'New Park Brewing'}
-        position={{lat: 41.741464 , lng: -72.717662}}
-        onClick={this.onMarkerClick} >
 
-      </Marker>
+        {breweryMarkers}
+
 
       <InfoWindow
         marker={this.state.activeMarker}
         visible={this.state.showingInfoWindow}>
           <div>
             <p>{this.state.selectedPlace.name}</p>
+            <a href={`/breweries/${this.state.selectedPlace.id}`}> Brewery Details </a>
           </div>
       </InfoWindow>
 
