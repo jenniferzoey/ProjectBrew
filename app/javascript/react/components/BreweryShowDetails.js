@@ -2,6 +2,13 @@ import React from 'react'
 
 const BreweryShowDetails = (props) => {
 
+  let visitText;
+    if (props.visit_status == true) {
+      visitText = "Congrats! This brewery is in your passport."
+    } else {
+      visitText = "You have not visited this brewery yet."
+    }
+
   return (
     <div>
       <div className="showheader">
@@ -11,8 +18,8 @@ const BreweryShowDetails = (props) => {
         <h4> Address: </h4>
         <p>{props.brewery.address}</p>
         <p>{props.brewery.city}, {props.brewery.state}, {props.brewery.zip}</p>
+        <p>{visitText}</p>
 
-        <a className="add-brewery-link" href={`/breweries/${props.brewery.id}/visits`}> Add Brewery </a>
       </div>
     </div>
   )
