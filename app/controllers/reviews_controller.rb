@@ -54,5 +54,5 @@ end
   private
 
   def review_params
-    params.require(:review).permit(:title, :body, :rating)
+    params.require(:review).permit(:title, :body, :rating, :review_photo)
   end
