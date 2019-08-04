@@ -50,6 +50,7 @@ export class MapContainer extends Component {
     let breweryMarkers = this.state.breweries.map(brewery => {
       return(
         <Marker
+          key={brewery.id}
           id={brewery.id}
           title={brewery.name}
           name={brewery.name}
