@@ -12,7 +12,9 @@ const BreweryShowDetails = (props) => {
   return (
     <div>
       <div className="showheader">
-        <img src='https://www.ontraksoftware.com/content/images/Craft-Brewery-Marketing-and-POS-Marketing.jpg' />
+        <div className="breweryTileLogo">
+          <img src={props.brewery.logo.url} />
+        </div>
 
         <h1> {props.brewery.name} </h1>
         <h4> Address: </h4>

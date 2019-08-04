@@ -5,6 +5,9 @@ const BreweryTile = (props) => {
 
   return (
     <div className="breweryTile">
+
+        <img className="breweryLogo" src={props.brewery.logo.url} />
+  
       <Link to={`/breweries/${props.brewery.id}`}>
         <p> {props.brewery.name} </p>
         </Link>

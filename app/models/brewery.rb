@@ -17,4 +17,8 @@ class Brewery < ApplicationRecord
   geocoded_by :full_address
   after_validation :geocode
 
+  mount_uploader :logo, BreweryLogoUploader
+
+
+
 end
