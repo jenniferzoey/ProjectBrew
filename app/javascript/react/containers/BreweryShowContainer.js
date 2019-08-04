@@ -95,13 +95,24 @@ class BreweryShowContainer extends Component {
 
 
   render() {
+
      let allReviews = this.state.brewery.reviews.map(review => {
-      return(
-        <ReviewTile
-          key={review.id}
-          review={review}
-        />
-      )
+       if(this.state.brewery.current_user !== null) {
+        return(
+          <ReviewTile
+            key={review.id}
+            review={review}
+            current_user={this.state.brewery.current_user.id}
+          />
+        )
+      } else {
+        return(
+          <ReviewTile
+            key={review.id}
+            review={review}
+          />
+        )
+      }
     })
 
 
