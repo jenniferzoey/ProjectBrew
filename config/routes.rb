@@ -8,6 +8,10 @@ Rails.application.routes.draw do
 
   resources :users, only: [:show]
 
+  resources :breweries do
+    resources :visits, only: [:create]
+  end
+
   namespace :api do
     namespace :v1 do
       resources :breweries, only: [:show, :index] do
@@ -15,6 +19,9 @@ Rails.application.routes.draw do
       end
       resources :users, only: [:show] do
         resources :breweries, only: [:index]
+      end
+      resources :users do
+        resources :visits, only: [:create, :index]
       end
     end
   end
