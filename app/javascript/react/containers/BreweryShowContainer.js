@@ -11,7 +11,8 @@ class BreweryShowContainer extends Component {
       brewery: {
         reviews: [],
         users: [],
-        current_user: {}
+        current_user: {},
+        logo: {}
       },
       user_visited: false
     }
