@@ -100,6 +100,7 @@ class BreweryShowContainer extends Component {
         <ReviewTile
           key={review.id}
           review={review}
+          current_user={this.state.brewery.current_user.id}
         />
       )
     })
