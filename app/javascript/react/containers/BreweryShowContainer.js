@@ -16,6 +16,7 @@ class BreweryShowContainer extends Component {
       user_visited: false
     }
     this.checkVisits=this.checkVisits.bind(this)
+    this.addBreweryVisit=this.addBreweryVisit.bind(this)
   }
 
   componentDidMount(){
@@ -36,8 +37,44 @@ class BreweryShowContainer extends Component {
       this.checkVisits()
     })
     .catch(error => console.error(error.message))
-
   }
+
+  submitBrewery(formPayload) {
+    fetch(`/api/v1/users/${this.state.brewery.current_user.id}/visits`, {
+      credentials: 'same-origin',
+      method: "POST",
+      body: JSON.stringify(formPayload),
+      headers: {
+        'Accept': 'application/json',
+        'Content-Type': 'application/json'
+      }
+    })
+    .then(response => {
+      if(response.ok) {
+        return response
+      } else {
+        let errorMessage = `${response.status} (${response.statusText})`,
+          error = new Error(errorMessage);
+        throw(error);
+      }
+    })
+    window.location.reload()
+    .catch(error => console.error(`Error in fetch: ${error.message}`))
+    console.log("submitBrewery ran!")
+  }
+
+
+
+  addBreweryVisit(event) {
+    event.preventDefault();
+    console.log("I was clicked")
+    let formPayload = {
+      user_id: this.state.brewery.current_user.id,
+      brewery_id: this.state.brewery.id
+    }
+    this.submitBrewery(formPayload)
+  }
+
 
   checkVisits(){
     let currentUserId = 0
@@ -57,8 +94,6 @@ class BreweryShowContainer extends Component {
   }
 
 
-
-
   render() {
      let allReviews = this.state.brewery.reviews.map(review => {
       return(
@@ -75,6 +110,7 @@ class BreweryShowContainer extends Component {
         newBreweryButton =
           <NewBreweryButton
             user_visited = {this.state.user_visited}
+            handleclick = {this.addBreweryVisit}
         />
       }
 

@@ -20,6 +20,9 @@ Rails.application.routes.draw do
       resources :users, only: [:show] do
         resources :breweries, only: [:index]
       end
+      resources :users do
+        resources :visits, only: [:create, :index]
+      end
     end
   end
 end
