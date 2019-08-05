@@ -61,33 +61,34 @@ export class MapContainer extends Component {
     })
 
     return(
-
-      <Map
-        google={this.props.google}
-        onClick={this.onMapClicked}
-        zoom={8}
-        initialCenter={{
-          lat: 42.7673,
-          lng: -71.8123,
-        }}
-        onClick={this.onMapClicked} >
-
-
-        {breweryMarkers}
+      <div>
+        <Map
+          google={this.props.google}
+          onClick={this.onMapClicked}
+          style={{width:'100%', height: '800px', position:'relative'}}
+          zoom={8}
+          initialCenter={{
+            lat: 42.7673,
+            lng: -71.8123,
+          }}
+          onClick={this.onMapClicked} >
 
 
-      <InfoWindow
-        marker={this.state.activeMarker}
-        visible={this.state.showingInfoWindow}>
-          <div>
-            <p>{this.state.selectedPlace.name}</p>
-            <a href={`/breweries/${this.state.selectedPlace.id}`}> Brewery Details </a>
-          </div>
-      </InfoWindow>
+          {breweryMarkers}
 
 
-      </Map>
+        <InfoWindow
+          marker={this.state.activeMarker}
+          visible={this.state.showingInfoWindow}>
+            <div>
+              <p>{this.state.selectedPlace.name}</p>
+              <a href={`/breweries/${this.state.selectedPlace.id}`}> Brewery Details </a>
+            </div>
+        </InfoWindow>
 
+
+        </Map>
+      </div>
 
     )
   }

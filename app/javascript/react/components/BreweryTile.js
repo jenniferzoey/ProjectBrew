@@ -4,13 +4,15 @@ import { Link } from 'react-router-dom'
 const BreweryTile = (props) => {
 
   return (
-    <div className="breweryTile">
+    <div className="breweryIndexTile large-2 column">
 
-        <img className="breweryLogo" src={props.brewery.logo.url} />
-  
-      <Link to={`/breweries/${props.brewery.id}`}>
-        <p> {props.brewery.name} </p>
+      <div className="breweryIndexTileContents">
+        <Link to={`/breweries/${props.brewery.id}`}>
+          <img className="breweryLogo" src={props.brewery.logo.url} />
+          <p> {props.brewery.name} </p>
         </Link>
+      </div>
+
     </div>
   )
 }
