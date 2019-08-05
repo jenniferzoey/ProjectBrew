@@ -66,7 +66,11 @@ class BreweriesIndexContainer extends Component {
 
         <div className="breweryList">
           <h1> Breweries </h1>
-          {breweryList}
+
+          <div class="row hpBreweryList">
+            {breweryList}
+          </div>
+
         </div>
       </div>
     )
