@@ -51,10 +51,12 @@ class BreweriesIndexContainer extends Component {
 
 
         <div className="about">
-          <h1> About </h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <div className="about-text">
+            <h2> Love beer? We do too! </h2>
+            <p>Brewport is your passport to New England breweries and allows you to keep track of all of the tap rooms you've visited. When you visit a brewery just add to your passport and leave a brewery review to help others have an amazing brewery visit. When youre looking to try a new brewery you can find it on the map or one of our state specific pages and read reviews from other brewery-lovers. Cheers!</p>
+          </div>
           <div className="aboutcta">
-            <p> Sign Up Now </p>
+            <button><a href={`/users/sign_up`}> Sign Up Now </a></button>
           </div>
         </div>
 
@@ -74,7 +76,7 @@ class BreweriesIndexContainer extends Component {
             <p>Maine</p>
             <p>New Hampshire</p>
             <p>Rhode Island</p>
-            <p>Vermont</p>            
+            <p>Vermont</p>
           </ul>
 
 

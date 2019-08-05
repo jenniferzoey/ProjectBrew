@@ -52,6 +52,18 @@ header {
   background-color: #C1DDDD;
   text-align: center;
   height: 300px;
+  padding-top: 40px;
+
+  .aboutcta {
+
+    button{
+      background-color: $navy;
+
+      a {
+        color: white;
+      }
+    }
+  }
 }
 
 .googlemap {
@@ -60,8 +72,8 @@ header {
 }
 
 .hpStateIndex {
-  height: 400px;
-  background: lightgray;
+  height: 350px;
+  background: #C1DDDD;
   text-align: center;
 }
 
