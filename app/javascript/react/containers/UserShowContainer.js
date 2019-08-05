@@ -50,9 +50,11 @@ class UserShowContainer extends Component {
           user={this.state.user}
         />
 
-        <div>
+        <div className="user-brew-visits">
           <h2> Visited Breweries </h2>
-          {userVisits}
+          <ul className="visit-brew-grid row">
+            {userVisits}
+          </ul>
         </div>
 
 

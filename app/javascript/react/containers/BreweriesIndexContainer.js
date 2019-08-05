@@ -58,16 +58,32 @@ class BreweriesIndexContainer extends Component {
           </div>
         </div>
 
+
         <div className="googlemap">
           <MapContainer
             breweries={this.state.breweries}
           />
         </div>
 
-        <div className="breweryList">
-          <h1> Breweries </h1>
 
-          <div class="row hpBreweryList">
+        <div className="hpStateIndex">
+          <h1>Search By State</h1>
+          <ul>
+            <p>Connecticut</p>
+            <p>Massachusetts</p>
+            <p>Maine</p>
+            <p>New Hampshire</p>
+            <p>Rhode Island</p>
+            <p>Vermont</p>            
+          </ul>
+
+
+        </div>
+
+        <div className="breweryList">
+          <h1> CT Breweries </h1>
+
+          <div className="hpBreweryList small-block-grid-2 large-block-grid-4">
             {breweryList}
           </div>
 
