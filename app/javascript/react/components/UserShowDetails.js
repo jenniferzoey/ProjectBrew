@@ -10,8 +10,8 @@ const UserShowDetails = (props) => {
 
       <div className= "user-info">
         <h1> {props.user.first_name} {props.user.last_name} </h1>
-        <p> {props.user.email} </p>
-        <p> Number of Brewery Visits: {props.user.visits.length} </p>
+        <p className="user-email"> {props.user.email} </p>
+        <h6> Number of Brewery Visits: {props.user.visits.length} </h6>
       </div>
 
     </div>

@@ -1,29 +1,33 @@
-<h2> New Review Form For <%= @brewery.name %> </h2>
+<div class="new-review-form">
 
-<%= form_for([@brewery, @review]) do |f| %>
+  <h2> New Review Form For <%= @brewery.name %> </h2>
 
-  <div class="field">
-    <%= f.label :title %><br />
-    <%= f.text_field :title %>
-  </div>
+  <%= form_for([@brewery, @review]) do |f| %>
 
-  <div class="field">
-    <%= f.label :body %><br />
-    <%= f.text_field :body %>
-  </div>
+    <div class="field">
+      <%= f.label :title %><br />
+      <%= f.text_field :title %>
+    </div>
 
-  <div class="field">
-    <%= f.label :rating, "Overall Rating (1-5)" %><br />
-    <%= f.number_field :rating %>
-  </div>
+    <div class="field">
+      <%= f.label :body %><br />
+      <%= f.text_field :body %>
+    </div>
 
-  <div class="field">
-      <%= f.label :review_photo, "Photo" %><br />
-      <%= f.file_field :review_photo %>
-  </div>
+    <div class="field">
+      <%= f.label :rating, "Overall Rating (1-5)" %><br />
+      <%= f.number_field :rating %>
+    </div>
 
-  <div class="actions">
-    <%= f.submit "Add a Review", class:"button" %>
-  </div>
+    <div class="field">
+        <%= f.label :review_photo, "Photo" %><br />
+        <%= f.file_field :review_photo %>
+    </div>
 
-<% end %>
+    <div class="actions">
+      <%= f.submit "Add a Review", class:"button" %>
+    </div>
+
+  <% end %>
+
+<div>

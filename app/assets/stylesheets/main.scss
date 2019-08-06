@@ -146,7 +146,6 @@ header {
         &:hover {
           color: lighten($navy, 20%);
         }
-
       }
     }
   }
@@ -157,8 +156,8 @@ header {
   h1 {
     font-family: 'Oswald', sans-serif;
   }
-
 }
+
 //-----Homepage Brewery List-------//
 
 .breweryList {
@@ -197,11 +196,16 @@ header {
 
 //----------------------------------------//
 
+
+
 //------Visited breweries gird on user profile page-------//
 
 .user-brew-visits {
+
+
   h2 {
     text-align: center;
+    font-family: 'Oswald', sans-serif;
   }
 }
 
@@ -227,6 +231,12 @@ header {
       padding-bottom: 0;
       bottom: 0px;
 
+        p {
+          font-family: 'Roboto', sans-serif;
+          font-weight: lighter;
+          font-size: 1rem;
+        }
+
         img {
           max-height: 120px;
           max-width: 175px;
@@ -239,20 +249,51 @@ header {
 
 //------User Show Details on Profile Page--------//
 
+
 .user-details-box {
   height: 250px;
-  margin: 50px;
+  margin-bottom: 50px;
+  background-color: #C1DDDD;
+
+  h1 {
+    font-family: 'Oswald', sans-serif;
+    margin-bottom: 0px;
+  }
+
+  p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: lighter;
+    font-style: italic;
+    font-size: 1.1rem;
+  }
+
+  h6 {
+    margin-top: 40px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
+    font-size: 1.1rem;
+  }
 
   img {
     float: left;
     height: 250px;
     width: 250px;
+    padding:15px;
+    max-width: 100%;
+    display: block;
   }
 }
 
-.show-page-button {
-  a {
-    color: white;
+//----------------------------------------//
+
+//------Brewery Show Page--------//
+
+.new-brewery-button {
+  button{
+    background-color: $navy;
+    margin-left: 70px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: lighter;
   }
 }
 
@@ -261,8 +302,22 @@ header {
   height: 250px;
   margin: 50px;
 
+
+  h1 {
+    font-family: 'Oswald', sans-serif;
+  }
+
+  h4 {
+    margin-bottom: 0px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+  }
+
   p {
     margin-bottom: 0px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: lighter;
+    font-size: 1.1rem;
   }
 
   .breweryTileLogo {
@@ -280,22 +335,63 @@ header {
 
 //------Reviews on the Brewery Show Page------//
 
-.reviews-box {
-  margin: 50px;
-  padding: 20px;
+.reviews-container {
+  // margin-left: 50px;
+  // margin-right: 50px;
+  background-color: #E6EFE9;
 
-  .reviewTile {
-    background-color: #C1DDDD;
-    margin:20px;
-    padding: 10px;
 
-    .reviewTitle {
-      font-weight: bold;
+
+  .reviews-box {
+    margin: 50px;
+    margin-top: 20px;
+    padding: 20px;
+
+
+    h3 {
+      font-family: 'Oswald', sans-serif;
     }
-    .review-edit-link {
-      background-color: #008CBA;
-      color: white;
-      padding: 5px;
+
+    .reviewTile {
+      background-color: #C1DDDD;
+      padding: 10px;
+      font-family: 'Roboto', sans-serif;
+      margin: 20px;
+
+      h5 {
+        font-weight: bold;
+      }
+
+      p {
+        font-weight: lighter;
+      }
+      i {
+        color: $navy;
+        margin-top: 20px;
+
+        &:hover {
+          color: lighten($navy, 20%);
+        }
+      }
+    }
+
+    .review-photo {
+      img {
+        max-width: 40%;
+        height:auto;
+      }
+    }
+  }
+
+  .new-review-button {
+    button {
+      background-color: $navy;
+      font-family: 'Roboto', sans-serif;
+      font-weight: lighter;
+      margin-left: 50px;
+      a {
+        color: white;
+      }
     }
   }
 }
@@ -304,17 +400,133 @@ header {
 
 
 //-------USER SIGN UP FORM-------------//
+
 .newuserformpage {
 
   h2 {
     text-align: center;
+    font-family: 'Oswald', sans-serif;
+    margin-bottom: 50px;
   }
 
-  .newuserform {
-    margin: 30px;
-    border: solid;
+    background-color: #C1DDDD;
+    margin: 50px;
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-top: 20px;
     padding: 40px;
+    border-radius: 20px;
+    font-family: 'Roboto', sans-serif;
+
+    .button {
+      background-color: $navy;
+      font-family: 'Roboto', sans-serif;
+      font-weight: lighter;
+    }
+
+}
+
+
+//----------------------------------------//
+
+
+//-------USER SIGN IN FORM-------------//
+
+.user-log-in {
+
+  h2 {
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    margin-bottom: 50px;
+  }
+
+    background-color: #C1DDDD;
+    margin: 50px;
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-top: 20px;
+    padding: 40px;
+    border-radius: 20px;
+    font-family: 'Roboto', sans-serif;
+
+  .button {
+    background-color: $navy;
+    font-family: 'Roboto', sans-serif;
+    font-weight: lighter;
   }
 }
+
+
+//----------------------------------------//
+
+
+//-------NEW-REVIEWS-FORM-------------//
+
+.new-review-form {
+
+  h2 {
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    margin-bottom: 50px;
+  }
+
+    background-color: #C1DDDD;
+    margin: 50px;
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-top: 20px;
+    padding: 40px;
+    border-radius: 20px;
+    font-family: 'Roboto', sans-serif;
+
+    .button {
+      background-color: $navy;
+      font-family: 'Roboto', sans-serif;
+      font-weight: lighter;
+    }
+}
+
+
+//----------------------------------------//
+
+
+//-------EDIT-REVIEWS-FORM-------------//
+
+.edit-review-form {
+
+  h2 {
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    margin-bottom: 50px;
+  }
+
+    background-color: #C1DDDD;
+    margin: 50px;
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-top: 20px;
+    padding: 40px;
+    border-radius: 20px;
+    font-family: 'Roboto', sans-serif;
+
+    .button {
+      background-color: $navy;
+      font-family: 'Roboto', sans-serif;
+      font-weight: lighter;
+    }
+
+    .delete-button {
+      color: #FE443F;
+      border-color: #FE443F;
+      background-color: #C1DDDD;
+      font-family: 'Roboto', sans-serif;
+      padding-left: 0px;
+
+      &:hover {
+        color: lighten(#FE443F, 20%);
+      }
+    }
+}
+
 
 //----------------------------------------//

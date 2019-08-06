@@ -75,32 +75,32 @@ class BreweriesIndexContainer extends Component {
 
           <div className="state-icon-container">
             <div className="stateIcon">
-              <i className="fas fa-beer fa-7x"></i>
+              <i className="fas fa-beer fa-6x"></i>
               <p>Connecticut</p>
             </div>
 
             <div className="stateIcon">
-              <i className="fas fa-beer fa-7x"></i>
+              <i className="fas fa-beer fa-6x"></i>
               <p>Massachusetts</p>
             </div>
 
             <div className="stateIcon">
-              <i className="fas fa-beer fa-7x"></i>
+              <i className="fas fa-beer fa-6x"></i>
               <p>Maine</p>
             </div>
 
             <div className="stateIcon">
-              <i className="fas fa-beer fa-7x"></i>
+              <i className="fas fa-beer fa-6x"></i>
               <p>New Hampshire</p>
             </div>
 
             <div className="stateIcon">
-              <i className="fas fa-beer fa-7x"></i>
+              <i className="fas fa-beer fa-6x"></i>
               <p>Rhode Island</p>
             </div>
 
             <div className="stateIcon">
-              <i className="fas fa-beer fa-7x"></i>
+              <i className="fas fa-beer fa-6x"></i>
               <p>Vermont</p>
             </div>
           </div>

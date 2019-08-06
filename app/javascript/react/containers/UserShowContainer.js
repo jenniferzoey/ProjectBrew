@@ -45,7 +45,7 @@ class UserShowContainer extends Component {
 
 
     return (
-      <div>
+      <div className="user-page">
         <UserShowDetails
           user={this.state.user}
         />
