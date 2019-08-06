@@ -68,8 +68,8 @@ export class MapContainer extends Component {
           style={{width:'100%', height: '800px', position:'relative'}}
           zoom={8}
           initialCenter={{
-            lat: 42.7673,
-            lng: -71.8123,
+            lat: 42.3601,
+            lng: -71.0589,
           }}
           onClick={this.onMapClicked} >
 

@@ -6,7 +6,7 @@ const ReviewTile = (props) => {
   let reviewUserId = props.review.user_id
   let editbutton;
     if(currentUserId == reviewUserId) {
-      editbutton = <button><a className="review-edit-link" href={`/breweries/${props.review.brewery_id}/reviews/${props.review.id}/edit`}> Edit Review </a></button>
+      editbutton = <a className="review-edit-link" href={`/breweries/${props.review.brewery_id}/reviews/${props.review.id}/edit`}><i className="fa fa-edit fa-lg"></i></a>
     }
 
   let reviewPhoto = props.review.review_photo
@@ -20,7 +20,7 @@ const ReviewTile = (props) => {
   return (
     <div className="reviewTile">
       <div>
-        <p className="reviewTitle"> {props.review.title} </p>
+        <h5 className="reviewTitle"> {props.review.title} </h5>
         <p> {props.review.body} </p>
       </div>
 
@@ -28,9 +28,8 @@ const ReviewTile = (props) => {
         {reviewPhotoUrl}
       </div>
 
-      <div>
         {editbutton}
-      </div>
+
     </div>
   )
 }

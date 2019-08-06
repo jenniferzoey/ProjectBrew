@@ -139,17 +139,20 @@ class BreweryShowContainer extends Component {
           visit_status={this.state.user_visited}
         />
 
-        <div>
+        <div className="new-brewery-button">
           {newBreweryButton}
         </div>
 
-        <div className="reviews-box">
-          <h3> Reviews: </h3>
-          {allReviews}
-        </div>
+        <div className="reviews-container">
+          <div className="reviews-box">
+            <h3> Reviews: </h3>
+            {allReviews}
+          </div>
 
-        <div className="show-page-button">
-          {newReviewFormLink}
+          <div className="new-review-button">
+            {newReviewFormLink}
+          </div>
+
         </div>
 
       </div>

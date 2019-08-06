@@ -17,9 +17,11 @@ const BreweryShowDetails = (props) => {
         </div>
 
         <h1> {props.brewery.name} </h1>
+        <br/>
         <h4> Address: </h4>
         <p>{props.brewery.address}</p>
         <p>{props.brewery.city}, {props.brewery.state}, {props.brewery.zip}</p>
+        <br/>
         <p>{visitText}</p>
 
       </div>
