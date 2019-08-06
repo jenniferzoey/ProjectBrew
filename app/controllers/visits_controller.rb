@@ -13,6 +13,6 @@ class VisitsController < ApplicationController
     else
       flash[:notice] = "Review failed to save. #{@review.errors.full_messages.join(", ")}"
       redirect_to root_path
+    end
   end
-
 end
