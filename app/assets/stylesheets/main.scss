@@ -1,6 +1,10 @@
 @import 'colors';
 @import url('https://fonts.googleapis.com/css?family=Ubuntu&display=swap');
 
+@import url('https://fonts.googleapis.com/css?family=Fauna+One|Open+Sans|Open+Sans+Condensed:300|Oswald|Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Raleway:300&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto:300&display=swap');
+
 body {
   background-color: $white;
 }
@@ -10,6 +14,7 @@ body {
 
   a {
     color: $white;
+    font-family: 'Oswald', sans-serif;
   }
 }
 
@@ -39,28 +44,60 @@ header {
   text-align: center;
 
   h1 {
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Oswald', sans-serif;
     text-transform: uppercase;
     margin: 0;
-    font-size: 3rem;
+    font-size: 6rem;
     white-space: nowrap;
     color: $white;
+  }
+
+  p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: lighter;
+    font-size: 2rem;
   }
 }
 
 .about {
   background-color: #C1DDDD;
   text-align: center;
-  height: 300px;
+  height: 375px;
   padding-top: 40px;
 
-  .aboutcta {
+  .about-text {
+    font-family: sans-serif;
 
+    h5 {
+      font-family: 'Roboto', sans-serif;
+      font-weight: lighter;
+    }
+
+    h2 {
+      font-family: 'Oswald', sans-serif;
+    }
+
+    p {
+      font-family: 'Roboto', sans-serif;
+      font-weight: lighter;
+      font-size: 1.2rem;
+    }
+
+  }
+
+  .aboutcta {
     button{
       background-color: $navy;
+      margin-top: 20px;
+
+      &:hover {
+        background-color: #7AD6D6;
+      }
 
       a {
         color: white;
+        font-family: 'Roboto', sans-serif;
+        font-weight: lighter;
       }
     }
   }
@@ -72,12 +109,56 @@ header {
 }
 
 .hpStateIndex {
-  height: 350px;
+  height: 450px;
   background: #C1DDDD;
   text-align: center;
+  padding-top: 40px;
+
+    h5 {
+      font-family: 'Roboto', sans-serif;
+      font-weight: lighter;
+    }
+
+    h1 {
+      font-family: 'Oswald', sans-serif;
+    }
+
+    p {
+      font-family: 'Roboto', sans-serif;
+      font-weight: lighter;
+      font-size: 1rem;
+    }
+
+    .state-icon-container {
+      margin-top: 60px;
+
+
+    .stateIcon {
+      margin-top: 60px;
+      width: 200px;
+      margin: 10px;
+      text-align: center;
+      display: inline-block;
+      i {
+        position: relative;
+        color: $navy;
+
+        &:hover {
+          color: lighten($navy, 20%);
+        }
+
+      }
+    }
+  }
 }
 
+.all-breweries-header {
+  text-align: center;
+  h1 {
+    font-family: 'Oswald', sans-serif;
+  }
 
+}
 //-----Homepage Brewery List-------//
 
 .breweryList {
