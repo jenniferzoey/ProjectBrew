@@ -76,43 +76,55 @@ class BreweriesIndexContainer extends Component {
           <div className="state-icon-container">
             <div className="stateIcon">
               <a href="/">
-                <img className="icon" src="images/CTIcon.svg" alt="CT Icon"></img>
-                <p>Connecticut</p>
+                <button>
+                  <img className="icon" src="images/CTIcon.svg" alt="CT Icon"></img>
+                  <p>Connecticut</p>
+                </button>
               </a>
             </div>
 
             <div className="stateIcon">
               <a href="/">
-                <img className="icon" src="images/MAIcon.svg" alt="MA Icon"></img>
-                <p>Massachusetts</p>
+                <button>
+                  <img className="icon" src="images/MAIcon.svg" alt="MA Icon"></img>
+                  <p>Massachusetts</p>
+                </button>
               </a>
             </div>
 
             <div className="stateIcon">
               <a href="/">
-                <img className="icon" src="images/MEIcon.svg" alt="ME Icon"></img>
-                <p>Maine</p>
+                <button>
+                  <img className="icon" src="images/MEIcon.svg" alt="ME Icon"></img>
+                  <p>Maine</p>
+                </button>
               </a>
             </div>
 
             <div className="stateIcon">
               <a href="/">
-                <img className="icon" src="images/NHIcon.svg" alt="NH Icon"></img>
-                <p>New Hampshire</p>
+                <button>
+                  <img className="icon" src="images/NHIcon.svg" alt="NH Icon"></img>
+                  <p>New Hampshire</p>
+                </button>
               </a>
             </div>
 
             <div className="stateIcon">
               <a href="/">
-                <img className="icon" src="images/RIIcon.svg" alt="RI Icon"></img>
-                <p>Rhode Island</p>
+                <button>
+                  <img className="icon" src="images/RIIcon.svg" alt="RI Icon"></img>
+                  <p>Rhode Island</p>
+                </button>
               </a>
             </div>
 
             <div className="stateIcon">
               <a href="/">
-                <img className="icon" src="images/VTIcon.svg" alt="VT Icon"></img>
-                <p>Vermont</p>
+                <button>
+                  <img className="icon" src="images/VTIcon.svg" alt="VT Icon"></img>
+                  <p>Vermont</p>
+                </button>
               </a>
             </div>
           </div>
