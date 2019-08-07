@@ -139,14 +139,14 @@ header {
       margin: 10px;
       text-align: center;
       display: inline-block;
-      i {
-        position: relative;
-        color: $navy;
 
-        &:hover {
-          color: lighten($navy, 20%);
+        button {
+          background-color: #C1DDDD;
+
+          p {
+            color: black;
+          }
         }
-      }
     }
   }
 }

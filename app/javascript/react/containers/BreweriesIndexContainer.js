@@ -75,33 +75,57 @@ class BreweriesIndexContainer extends Component {
 
           <div className="state-icon-container">
             <div className="stateIcon">
-              <i className="fas fa-beer fa-6x"></i>
-              <p>Connecticut</p>
+              <a href="/">
+                <button>
+                  <img className="icon" src="images/CTIcon.svg" alt="CT Icon"></img>
+                  <p>Connecticut</p>
+                </button>
+              </a>
             </div>
 
             <div className="stateIcon">
-              <i className="fas fa-beer fa-6x"></i>
-              <p>Massachusetts</p>
+              <a href="/">
+                <button>
+                  <img className="icon" src="images/MAIcon.svg" alt="MA Icon"></img>
+                  <p>Massachusetts</p>
+                </button>
+              </a>
             </div>
 
             <div className="stateIcon">
-              <i className="fas fa-beer fa-6x"></i>
-              <p>Maine</p>
+              <a href="/">
+                <button>
+                  <img className="icon" src="images/MEIcon.svg" alt="ME Icon"></img>
+                  <p>Maine</p>
+                </button>
+              </a>
             </div>
 
             <div className="stateIcon">
-              <i className="fas fa-beer fa-6x"></i>
-              <p>New Hampshire</p>
+              <a href="/">
+                <button>
+                  <img className="icon" src="images/NHIcon.svg" alt="NH Icon"></img>
+                  <p>New Hampshire</p>
+                </button>
+              </a>
             </div>
 
             <div className="stateIcon">
-              <i className="fas fa-beer fa-6x"></i>
-              <p>Rhode Island</p>
+              <a href="/">
+                <button>
+                  <img className="icon" src="images/RIIcon.svg" alt="RI Icon"></img>
+                  <p>Rhode Island</p>
+                </button>
+              </a>
             </div>
 
             <div className="stateIcon">
-              <i className="fas fa-beer fa-6x"></i>
-              <p>Vermont</p>
+              <a href="/">
+                <button>
+                  <img className="icon" src="images/VTIcon.svg" alt="VT Icon"></img>
+                  <p>Vermont</p>
+                </button>
+              </a>
             </div>
           </div>
         </div>
