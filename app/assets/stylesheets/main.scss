@@ -139,13 +139,25 @@ header {
       margin: 10px;
       text-align: center;
       display: inline-block;
-      i {
-        position: relative;
-        color: $navy;
-
-        &:hover {
-          color: lighten($navy, 20%);
-        }
+      //
+      // i {
+      //   position: relative;
+      //   color: $navy;
+      //
+      //   &:hover {
+      //     color: lighten($navy, 20%);
+      //   }
+      // }
+      // img {
+      //   position: relative;
+      //   color: $navy;
+      //
+      //   &:hover {
+      //     color: lighten(black, 20%);
+      //   }
+      // }
+      svg {
+        fill: $navy;
       }
     }
   }

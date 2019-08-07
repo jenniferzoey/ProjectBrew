@@ -75,33 +75,45 @@ class BreweriesIndexContainer extends Component {
 
           <div className="state-icon-container">
             <div className="stateIcon">
-              <i className="fas fa-beer fa-6x"></i>
-              <p>Connecticut</p>
+              <a href="/">
+                <img className="icon" src="images/CTIcon.svg" alt="CT Icon"></img>
+                <p>Connecticut</p>
+              </a>
             </div>
 
             <div className="stateIcon">
-              <i className="fas fa-beer fa-6x"></i>
-              <p>Massachusetts</p>
+              <a href="/">
+                <img className="icon" src="images/MAIcon.svg" alt="MA Icon"></img>
+                <p>Massachusetts</p>
+              </a>
             </div>
 
             <div className="stateIcon">
-              <i className="fas fa-beer fa-6x"></i>
-              <p>Maine</p>
+              <a href="/">
+                <img className="icon" src="images/MEIcon.svg" alt="ME Icon"></img>
+                <p>Maine</p>
+              </a>
             </div>
 
             <div className="stateIcon">
-              <i className="fas fa-beer fa-6x"></i>
-              <p>New Hampshire</p>
+              <a href="/">
+                <img className="icon" src="images/NHIcon.svg" alt="NH Icon"></img>
+                <p>New Hampshire</p>
+              </a>
             </div>
 
             <div className="stateIcon">
-              <i className="fas fa-beer fa-6x"></i>
-              <p>Rhode Island</p>
+              <a href="/">
+                <img className="icon" src="images/RIIcon.svg" alt="RI Icon"></img>
+                <p>Rhode Island</p>
+              </a>
             </div>
 
             <div className="stateIcon">
-              <i className="fas fa-beer fa-6x"></i>
-              <p>Vermont</p>
+              <a href="/">
+                <img className="icon" src="images/VTIcon.svg" alt="VT Icon"></img>
+                <p>Vermont</p>
+              </a>
             </div>
           </div>
         </div>
