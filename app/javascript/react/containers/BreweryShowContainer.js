@@ -87,7 +87,6 @@ class BreweryShowContainer extends Component {
 
       visits.forEach(user => {
         if(currentUserId == user.id) {
-          console.log(user.first_name)
           this.setState ( { user_visited: true } )
         }
       })

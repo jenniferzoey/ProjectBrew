@@ -52,7 +52,7 @@ class UserShowContainer extends Component {
 
         <div className="user-brew-visits">
           <h2> Visited Breweries </h2>
-          <ul className="visit-brew-grid row">
+          <ul className="visit-brew-grid">
             {userVisits}
           </ul>
         </div>

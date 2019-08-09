@@ -72,6 +72,7 @@ class BreweriesIndexContainer extends Component {
         <div className="hpStateIndex">
           <h5>Already have a state in mind?</h5>
           <h1>View Breweries By State</h1>
+          <h5> Coming soon </h5>
 
           <div className="state-icon-container">
             <div className="stateIcon">
