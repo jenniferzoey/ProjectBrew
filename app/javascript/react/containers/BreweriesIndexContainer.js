@@ -45,7 +45,7 @@ class BreweriesIndexContainer extends Component {
         <header>
           <div className="title">
             <h1>Brewport</h1>
-            <p> Your passport to New England Breweries </p>
+            <p> Your passport for New England breweries </p>
           </div>
         </header>
 
@@ -53,8 +53,8 @@ class BreweriesIndexContainer extends Component {
         <div className="about">
           <div className="about-text">
             <h5>About the App</h5>
-            <h2> Love beer? We do too! </h2>
-            <p>Brewport is your passport to New England breweries and allows you to keep track of all of the tap rooms you've visited. When you visit a brewery just add to your passport and leave a brewery review to help others have an amazing brewery visit. When youre looking to try a new brewery you can find it on the map or one of our state specific pages and read reviews from other brewery-lovers. Cheers!</p>
+            <h2>Love beer? We do too!</h2>
+            <p>Brewport is your passport for New England breweries and allows you to keep track of all of the tap rooms you've visited. When you visit a brewery just add it to your passport and leave a brewery review to help others have an amazing brewery visit. When youre looking for a new brewery to try you can find it on the homepage map or on one of our state specific pages and then read reviews from other brewery-lovers. Cheers!</p>
           </div>
           <div className="aboutcta">
             <button><a href={`/users/sign_up`}> Sign Up Now </a></button>
@@ -147,19 +147,3 @@ class BreweriesIndexContainer extends Component {
 }
 
 export default BreweriesIndexContainer
-
-
-
-
-
-
-
-
-
-
-// <button>Connecticut</button>
-// <button>Massachusetts</button>
-// <button>Maine</button>
-// <button>New Hampshire</button>
-// <button>Rhode Island</button>
-// <button>Vermont</button>
