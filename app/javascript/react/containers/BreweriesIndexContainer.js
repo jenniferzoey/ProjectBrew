@@ -54,7 +54,7 @@ class BreweriesIndexContainer extends Component {
           <div className="about-text">
             <h5>About the App</h5>
             <h2>Love beer? We do too!</h2>
-            <p>Brewport is your passport for New England breweries and allows you to keep track of all of the tap rooms you've visited. When you visit a brewery just add it to your passport and leave a brewery review to help others have an amazing brewery visit. When youre looking for a new brewery to try you can find it on the homepage map or on one of our state specific pages and then read reviews from other brewery-lovers. Cheers!</p>
+            <p>Brewport is your passport for New England breweries and allows you to keep track of all of the tap rooms you've visited. When you visit a brewery just add it to your passport and leave a brewery review to help others have an amazing brewery visit. When you're looking for a new brewery to try you can find it on the homepage map or on one of our state specific pages and then read reviews from other brewery-lovers. Cheers!</p>
           </div>
           <div className="aboutcta">
             <button><a href={`/users/sign_up`}> Sign Up Now </a></button>
