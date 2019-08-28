@@ -61,14 +61,12 @@ class BreweryShowContainer extends Component {
     })
     window.location.reload()
     .catch(error => console.error(`Error in fetch: ${error.message}`))
-    console.log("submitBrewery ran!")
   }
 
 
 
   addBreweryVisit(event) {
     event.preventDefault();
-    console.log("I was clicked")
     let formPayload = {
       user_id: this.state.brewery.current_user.id,
       brewery_id: this.state.brewery.id
